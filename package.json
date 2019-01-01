@@ -2,6 +2,7 @@
   "name": "use-mouse-prediction",
   "version": "0.0.0",
   "license": "MIT",
+  "repository": "exogen/use-mouse-prediction",
   "files": [
     "dist"
   ],
@@ -16,6 +17,8 @@
     "build": "npm run build:demo && npm run build:dist",
     "build:demo": "rimraf .next docs && next build && next export -o docs && touch docs/.nojekyll",
     "build:dist": "rollup -c",
+    "postbuild:dist": "npm run size",
+    "size": "bundlesize",
     "start": "next start",
     "start:dev": "next dev"
   },
