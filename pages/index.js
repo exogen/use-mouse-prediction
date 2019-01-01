@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import Head from "next/head";
 import circleIntersectsBox from "intersects/circle-box";
 import useMousePrediction from "../src";
 
@@ -23,6 +24,9 @@ export default function DemoPage() {
 
   return (
     <main>
+      <Head>
+        <title>use-mouse-prediction</title>
+      </Head>
       <style jsx global>{`
         body {
           margin: 0;
