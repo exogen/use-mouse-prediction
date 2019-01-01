@@ -1,5 +1,7 @@
 # use-mouse-prediction
 
+**[Demo!](https://exogen.github.io/use-mouse-prediction/)**
+
 A React hook for predicting where the mouse cursor will be at some point in the
 future. 🔮
 
